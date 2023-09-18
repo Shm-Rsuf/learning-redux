@@ -12,14 +12,12 @@ store.subscribe(() => {
 });
 
 // disptach actions
-// store.dispatch(counterActions.increment());
+store.dispatch(counterActions.increment());
+store.dispatch(counterActions.increment());
+store.dispatch(counterActions.increment());
 
-// store.dispatch(counterActions.increment());
+// store.dispatch(dynamicCounterActions.increment(2));
 
-// store.dispatch(counterActions.decrement());
+// store.dispatch(dynamicCounterActions.increment(3));
 
-store.dispatch(dynamicCounterActions.increment(2));
-
-store.dispatch(dynamicCounterActions.increment(3));
-
-store.dispatch(dynamicCounterActions.decrement(5));
+// store.dispatch(dynamicCounterActions.decrement(5));
