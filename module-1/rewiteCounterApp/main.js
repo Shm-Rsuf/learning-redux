@@ -12,7 +12,12 @@ incrementEl.addEventListener("click", () => {
 
 decrementEl.addEventListener("click", () => {
   count -= 2;
-  counterEl.innerText = count;
+  if (count <= 0) {
+    count = 0;
+    counterEl.innerText = count;
+  } else {
+    counterEl.innerText = count;
+  }
 });
 
 // // actions
